@@ -1,3 +1,4 @@
 log/*
 */tests.py
 .idea/*
+*/__pycache__/*
