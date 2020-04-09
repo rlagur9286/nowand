@@ -2,4 +2,4 @@ log/*
 */tests.py
 .idea/*
 */__pycache__/*
-*/cache/*
+app/static/files/cache/*

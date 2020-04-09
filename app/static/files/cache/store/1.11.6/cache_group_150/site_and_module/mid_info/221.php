@@ -1,5 +1,0 @@
-<?php
-if(!defined('__XE__')) { exit(); }
-return 'O:8:"stdClass":22:{s:10:"module_srl";s:3:"221";s:6:"module";s:5:"board";s:19:"module_category_srl";s:1:"0";s:10:"layout_srl";s:3:"157";s:10:"use_mobile";s:1:"Y";s:11:"mlayout_srl";s:2:"-1";s:8:"menu_srl";s:1:"0";s:8:"site_srl";s:1:"0";s:3:"mid";s:11:"board_photo";s:11:"is_skin_fix";s:1:"Y";s:4:"skin";s:11:"sketchbook5";s:12:"is_mskin_fix";s:1:"N";s:5:"mskin";s:13:"/USE_DEFAULT/";s:13:"browser_title";s:28:"김포수목장 시설전경";s:11:"description";s:0:"";s:10:"is_default";s:1:"N";s:7:"content";N;s:8:"mcontent";N;s:8:"open_rss";s:1:"Y";s:11:"header_text";s:272:"<div class="title-container">
-<h4>생활권에 가까운 아늑한 추모공원 납골당</h4>
-<span>고인을 모신 참배객들이 언제 어디서든 쉽게 찾아뵐수 있으며, 유가족들을 위한 편리한 주변시설을 갖추고 있습니다.</span></div>";s:11:"footer_text";s:0:"";s:7:"regdate";s:14:"20200330004348";}';

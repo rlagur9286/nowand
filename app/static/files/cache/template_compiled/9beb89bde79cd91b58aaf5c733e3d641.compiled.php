@@ -1,1 +1,0 @@
-<?php if(!defined("__XE__"))exit;?>Copyright @ <a href="https://www.xehub.io" target="_blank">XEHub.</a> <span>Powered by <a href="https://www.xpressengine.com/" target="_blank">XpressEngine</a>.</span>
