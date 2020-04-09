@@ -1,0 +1,3 @@
+<?php
+if(!defined('__XE__')) { exit(); }
+return 'O:8:\"stdClass\":9:{s:6:\"enable\";s:1:\"Y\";s:18:\"use_optimize_title\";s:1:\"Y\";s:15:\"ga_except_admin\";s:1:\"N\";s:18:\"ga_track_subdomain\";s:1:\"N\";s:9:\"site_name\";s:12:\"나우앤드\";s:11:\"site_slogan\";s:45:\"장사시설 운영ㆍ건축 컨설팅 전문\";s:16:\"site_description\";s:100:\"벽제중앙추모공원, 하늘안추모공원, 김포수목장, 분양사, 뿌리 후불제 상조\";s:13:\"site_keywords\";s:68:\"납골당,수목장,후불제상조,봉안당,추모공원,자연장\";s:14:\"site_image_url\";N;}';

@@ -1,0 +1,3 @@
+<?php
+if(!defined('__XE__')) { exit(); }
+return 'O:8:"stdClass":9:{s:6:"enable";s:1:"Y";s:18:"use_optimize_title";s:1:"Y";s:15:"ga_except_admin";s:1:"N";s:18:"ga_track_subdomain";s:1:"N";s:9:"site_name";s:12:"나우앤드";s:11:"site_slogan";s:59:"납골당,추모공원,안치단,자연장 시설 컨설팅";s:16:"site_description";s:126:"벽제납골당,의정부,양주,인천,강화,김포수목장,안치단,자연장,나무,납골시설,분양,컨설팅 전문";s:13:"site_keywords";s:81:"추모공원,납골당,수목장,후불제상조,봉안당,추모공원,자연장";s:14:"site_image_url";N;}';
