@@ -26,6 +26,10 @@ urlpatterns = [
     url(r'^byeokje/', views.render_page, {'page_name': 'byeokje'}),
     url(r'^byeokje_info/', views.render_page, {'page_name': 'byeokje_info'}),
     url(r'^byeokje_photo/', views.render_page, {'page_name': 'byeokje_photo'}),
+
+    url(r'^gimpo/', views.render_page, {'page_name': 'gimpo'}),
+    url(r'^gimpo_info/', views.render_page, {'page_name': 'gimpo_info'}),
+    url(r'^gimpo_photo/', views.render_page, {'page_name': 'gimpo_photo'}),
     url(r'^robots.txt$', TemplateView.as_view(template_name="robots.txt", content_type="text/plain"), name="project_robots_file"),
 ]
 
