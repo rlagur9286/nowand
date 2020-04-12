@@ -32,8 +32,8 @@
     <link href="{% static "font/fontawesome5/free/js/all.min.js" %}" rel="stylesheet">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="Site RSS" href="http://nowand.net/rss"/>
-    <link rel="alternate" type="application/atom+xml" title="Site Atom" href="http://nowand.net/atom"/>
+    <link rel="alternate" type="application/rss+xml" title="Site RSS" href="http://nowand.org/rss"/>
+    <link rel="alternate" type="application/atom+xml" title="Site Atom" href="http://nowand.org/atom"/>
 
 
     <script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
@@ -48,12 +48,12 @@
     <style> .xe_content {
         font-size: 13px;
     }</style>
-    <link rel="canonical" href="http://nowand.net/"/>
+    <link rel="canonical" href="http://nowand.org/"/>
     <meta name="keywords" content="추모공원,납골당,수목장,후불제상조,봉안당,추모공원,자연장"/>
     <meta name="description" content="벽제납골당,의정부,양주,인천,강화,김포수목장,안치단,자연장,나무,납골시설,분양,컨설팅 전문"/>
     <meta property="og:locale" content="ko_KR"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://nowand.net/"/>
+    <meta property="og:url" content="http://nowand.org/"/>
     <meta property="og:site_name" content="나우앤드"/>
     <meta property="og:title" content="나우앤드 - 납골당,추모공원,안치단,자연장 시설 컨설팅"/>
     <meta property="og:description" content="벽제납골당,의정부,양주,인천,강화,김포수목장,안치단,자연장,나무,납골시설,분양,컨설팅 전문"/>
@@ -69,38 +69,6 @@
     <div id="header" class="header_wrap xe-clearfix">
         <div class="wrap_menu clear">
             <header class="header">
-
-                <div class="side">
-                    <ul>
-                        <!-- search -->
-                        <!-- admin -->
-                        <li>
-                            <a href="/index.php?module=admin" target="_blank" title="관리"><i class="xi-cog"></i><span
-                                    class="blind">관리</span></a>
-                        </li>                    <!-- login -->
-                        <li class="hover">
-                            <!-- after_login -->
-                            <a href="/index.php?mid=nowand_index&amp;act=dispMemberInfo" class="login_after">
-                                <img src="{% static "layouts/xe_funeral/img/ico_default.jpg" %}" alt="나우앤드"/>
-                            </a>
-                            <div class="ly ly_login">
-                                <ul>
-                                    <li><a href="/index.php?mid=nowand_index&amp;act=dispMemberInfo">회원정보 보기</a></li>
-                                    <li><a href="/index.php?mid=nowand_index&amp;act=dispMemberScrappedDocument">스크랩
-                                        보기</a></li>
-                                    <li><a href="/index.php?mid=nowand_index&amp;act=dispMemberSavedDocument">저장함 보기</a>
-                                    </li>
-                                    <li><a href="/index.php?mid=nowand_index&amp;act=dispMemberOwnDocument">작성 글 보기</a>
-                                    </li>
-                                    <li><a href="/index.php?mid=nowand_index&amp;act=dispMemberLogout">로그아웃</a></li>
-                                </ul>
-                                <span class="edge"></span>
-                            </div>
-                            <!-- /after_login -->
-                        </li>
-                    </ul>
-                </div>
-
                 <div class="logo-item">
                     <a href="/">
                         <img src="{% static "layouts/xe_funeral/img/logo.png" %}" alt="나우앤드"/>
@@ -242,11 +210,10 @@
                 <h2 class="tel_title"><b>1522-4991</b>24시간 실시간 상담전화</h2>
                 <p>전문상담사가 직접 상담해드리는 빠르고 간편한 1:1상담을 이용해보시기 바랍니다.</p>
             </div>
-            <ul class="info-count">
-                <li><a href="tel:1522-4991"><span><i class="fa fa-podcast fa-3x"></i><strong>친절상담</strong></span></a>
-                </li>
-                <li><a href="tel:1522-4991"><span><i class="fa fa-car fa-3x"></i><strong>무료답사</strong></span></a></li>
-                <li><a href="tel:1522-4991"><span><i class="fa fa-users fa-3x"></i><strong>무료동행</strong></span></a></li>
+            <ul class="info-count" style="position:absolute;right:-110px;top:-115px;width:500px;list-style:none;">
+                <li><a href="tel:1522-4991"><img src="{% static "img/무료상담.JPG" %}" style="width: 45px; height: 31.5px" alt="무료상담"/><strong>친절상담</strong></a></li>
+                <li><a href="tel:1522-4991"><img src="{% static "img/무료답사.JPG" %}" style="width: 45px; height: 31.5px" alt="무료답사"/><strong>무료답사</strong></a></li>
+                <li><a href="tel:1522-4991"><img src="{% static "img/동행1.PNG" %}" style="width: 45px; height: 31.5px" alt="무료동행"/><strong>무료동행</strong></a></li>
             </ul>
             <!-- WelcomeXE -->
             <div class="welcomeXE">
@@ -311,14 +278,6 @@
                     <div></div>
                 </div>
             </div>
-            <div class="btnArea">
-		<span class="btn-group">
-			<button class="btn" type="button" onclick="doRemoveWidgetCache(364); return false;">캐시파일 재생성</button>
-						<a class="btn" href="/index.php?mid=nowand_index&amp;act=dispPageAdminInfo&amp;module_srl=364">설정</a>
-									<a class="btn"
-                                       href="/index.php?mid=nowand_index&amp;act=dispPageAdminContentModify">페이지 수정</a>
-								</span>
-            </div>
         </div>
         <!-- /CONTENT -->
     </div>
@@ -377,7 +336,7 @@ Copyright @ 2016~2020 NOWAND.All rights reserved.
                                                                                                   value="/"/><input
                     type="hidden" name="mid" value="nowand_index"/><input type="hidden" name="vid" value=""/>
                 <input type="hidden" name="act" value="procMemberLogin"/>
-                <input type="hidden" name="success_return_url" value="http://nowand.net/"/>
+                <input type="hidden" name="success_return_url" value="http://nowand.org/"/>
                 <input type="hidden" name="xe_validator_id" value="layouts/xedition/layout/1"/>
                 <fieldset>
                     <legend class="blind">로그인</legend>

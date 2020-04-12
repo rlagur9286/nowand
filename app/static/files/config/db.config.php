@@ -23,7 +23,7 @@ $db_info = (object)array (
       'db_table_prefix' => 'xe_',
     ),
   ),
-  'default_url' => 'http://nowand.net/',
+  'default_url' => 'http://nowand.org/',
   'use_mobile_view' => 'Y',
   'use_rewrite' => 'Y',
   'time_zone' => '+0900',

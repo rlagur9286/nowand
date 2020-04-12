@@ -23,6 +23,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.render_page, {'page_name': 'index'}),
     url(r'^byeokje/', views.render_page, {'page_name': 'byeokje'}),
+    url(r'^byeokje_info/', views.render_page, {'page_name': 'byeokje_info'}),
+    url(r'^byeokje_photo/', views.render_page, {'page_name': 'byeokje_photo'}),
     # url(r'^get_model_score/', apis.handle_get_model_score),
 ]
 
