@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from nowand import settings
 from app import views, apis
+from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -25,8 +26,9 @@ urlpatterns = [
     url(r'^byeokje/', views.render_page, {'page_name': 'byeokje'}),
     url(r'^byeokje_info/', views.render_page, {'page_name': 'byeokje_info'}),
     url(r'^byeokje_photo/', views.render_page, {'page_name': 'byeokje_photo'}),
-    # url(r'^get_model_score/', apis.handle_get_model_score),
+    url(r'^robots.txt$', TemplateView.as_view(template_name="robots.txt", content_type="text/plain"), name="project_robots_file"),
 ]
+
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
