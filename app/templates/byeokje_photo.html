@@ -17,6 +17,8 @@
     <link href="{% static "layouts/xe_funeral/css/widget.login.min.css" %}" rel="stylesheet">
     <link href="{% static "lib/open-iconic/font/css/open-iconic-bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static "css/layout.css" %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- JS -->
     <link href="{% static "layouts/xe_funeral/js/idangerous.swiper.min.js" %}">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -280,11 +282,9 @@
     </div>    <!-- Swiper -->
     <!-- /VISUAL -->
     <!-- BODY -->
-    <div class="body fixed-width sub none">
-
+    <div class="container-fluid">
         <!-- CONTENT -->
-        <div class="content" id="content">
-
+        <div class="container-fluid">
             <div class="page_title">
                 <span>벽제납골당 시설전경</span>
             </div>
@@ -312,194 +312,22 @@
                     <h4>생활권에 가까운 아늑한 추모공원 납골당</h4>
                     <span>고인을 모신 참배객들이 언제 어디서든 쉽게 찾아뵐수 있으며, 유가족들을 위한 편리한 주변시설을 갖추고 있습니다.</span></div>
             </div>
-            <div id="bd_139_0" class="bd use_np " data-default_style="webzine" data-bdBubble="N" data-bdFilesType="">
-                <div class="bd_hd clear">
-                    <div class="bd_set fr m_btn_wrp m_no">
-                        <a class="viewer_with rd_viewer bubble" href="#"
-                           title="이 버튼을 활성화시키면, 목록에서 게시물 링크를 클릭 시 '뷰어로 보기'로 보게 됩니다."><em>✔</em> <strong>게시물을 뷰어로
-                            보기</strong></a></div>
-
-                </div>
-                <div class="bd_lst_wrp">
-                    <div class="tl_srch clear">
-                    </div>
-                    <div class="cnb_n_list">
-                    </div>
-                    <ol class="bd_lst bd_zine card card1 img_loadN" data-masonry="_N">
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-                                    <img class="tmb"
-                                         src="{% static "files/thumbnails/394/360x300.crop.jpg?20200330143607.jpg" %}"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">납골당</h3>
-                                <div class="info">
-                                </div>
+            <div class="container-fluid">
+                <div class="row">
+                    {% for img in img_list %}
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <img src="/static/{{ img }}" class="card-img-top" alt="납골당">
+                            <div class="card-body text-center">
+                                {% if loop.index0 % 3 == 0 }
+                                <p class="card-text">납골당</p>
+                                {% else if loop.index0 % 3 == 1}
+                                <p class="card-text">벽제납골당</p>
+                                {% else %}
+                                <p class="card-text">벽제납골당</p>
+                                {% endif %}
                             </div>
-                            <a class="hx" href="/byeokje_photo/394"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=394&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-                                    <img class="tmb"
-                                         src="{% static "files/thumbnails/392/360x300.crop.jpg?20200330143538.jpg" %}"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">납골당</h3>
-                                <div class="info">
-                                </div>
-                            </div>
-                            <a class="hx" href="/byeokje_photo/392"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=392&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-                                    <img class="tmb"
-                                         src="http://nowand.org/files/thumbnails/390/360x300.crop.jpg?20200330143503"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">납골당</h3>
-                                <div class="info">
-                                </div>
-                            </div>
-                            <a class="hx" href="/byeokje_photo/390"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=390&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-
-                                    <img class="tmb"
-                                         src="http://nowand.org/files/thumbnails/203/360x300.crop.jpg?20200329223138"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">벽제납골당</h3>
-                                <div class="info">
-                                </div>
-                            </div>
-                            <a class="hx" href="/byeokje_photo/203"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=203&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-
-                                    <img class="tmb"
-                                         src="http://nowand.org/files/thumbnails/201/360x300.crop.jpg?20200329223125"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">벽제납골당</h3>
-                                <div class="info">
-                                </div>
-                            </div>
-                            <a class="hx" href="/byeokje_photo/201"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=201&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-
-                                    <img class="tmb"
-                                         src="http://nowand.org/files/thumbnails/199/360x300.crop.jpg?20200329223112"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">벽제납골당</h3>
-                                <div class="info">
-                                </div>
-                            </div>
-                            <a class="hx" href="/byeokje_photo/199"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=199&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-
-                                    <img class="tmb"
-                                         src="http://nowand.org/files/thumbnails/197/360x300.crop.jpg?20200329223151"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">벽제납골당</h3>
-                                <div class="info">
-                                </div>
-                            </div>
-                            <a class="hx" href="/byeokje_photo/197"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=197&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-                                    <img class="tmb"
-                                         src="http://nowand.org/files/thumbnails/194/360x300.crop.jpg?20200329205728"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">벽제납골당</h3>
-                                <div class="info">
-                                </div>
-                            </div>
-                            <a class="hx" href="/byeokje_photo/194"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=194&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                        <li class="clear">
-                            <div class="rt_area is_tmb">
-                                <div class="tmb_wrp ribbon_v">
-
-                                    <img class="tmb"
-                                         src="http://nowand.org/files/thumbnails/192/360x300.crop.jpg?20200329205728"
-                                         alt=""/>
-                                </div>
-                                <h3 class="ngeb">벽제납골당</h3>
-                                <div class="info">
-                                </div>
-                            </div>
-                            <a class="hx" href="/byeokje_photo/192"
-                               data-viewer="/index.php?mid=byeokje_photo&amp;document_srl=192&amp;listStyle=viewer"><span
-                                    class="blind">Read More</span></a>
-                        </li>
-                    </ol>
-                    <div class="btm_mn clear">
-                        <div class="fl">
-                            <a class="btn_img fl" href="/index.php?mid=byeokje_photo&amp;page=1"><i
-                                    class="fa fa-bars"></i> 목록</a>
                         </div>
-                        <div class="fr">
-                            <a class="btn_img" href="/index.php?mid=byeokje_photo&amp;act=dispBoardWrite"><i
-                                    class="ico_16px write"></i> 쓰기</a></div>
-                    </div>
-                    <form action="./" method="get" class="bd_pg clear"><input type="hidden" name="error_return_url"
-                                                                              value="/byeokje_photo"/><input
-                            type="hidden" name="act" value=""/>
-                        <fieldset>
-                            <legend class="blind">Board Pagination</legend>
-                            <input type="hidden" name="vid" value=""/>
-                            <input type="hidden" name="mid" value="byeokje_photo"/>
-                            <input type="hidden" name="category" value=""/>
-                            <input type="hidden" name="search_keyword" value=""/>
-                            <input type="hidden" name="search_target" value=""/>
-                            <input type="hidden" name="listStyle" value="webzine"/>
-                            <strong class="direction"><i class="fa fa-angle-left"></i> Prev</strong> <a
-                                class="frst_last bubble this" href="/byeokje_photo" title="첫 페이지">1</a>
-                            <strong class="direction">Next <i class="fa fa-angle-right"></i></strong>
-                            <div class="bd_go_page tg_cnt2 wrp">
-                                <button type="button" class="tg_blur2"></button>
-                                <input type="text" name="page" class="itx"/>/ 1
-                                <button type="submit" class="bd_btn">GO</button>
-                                <span class="edge"></span>
-                                <i class="ie8_only bl"></i><i class="ie8_only br"></i>
-                                <button type="button" class="tg_blur2"></button>
-                            </div>
-                        </fieldset>
-                    </form>
+                    {% endfor%}
                 </div>
             </div>
         </div>
@@ -548,17 +376,6 @@ Copyright @ 2016~2020 NOWAND.All rights reserved.
 <a href="#" class="btn_top"><i class="xi-angle-up"><span class="blind">위로</span></i></a>
 <!-- /TOP -->
 <!-- ETC -->
-<div class="wfsr"></div>
-<script src="/files/cache/js_filter_compiled/d046d1841b9c79c545b82d3be892699d.ko.compiled.js?20200328194329"></script>
-<script src="/files/cache/js_filter_compiled/1bdc15d63816408b99f674eb6a6ffcea.ko.compiled.js?20200328194329"></script>
-<script src="/files/cache/js_filter_compiled/9b007ee9f2af763bb3d35e4fb16498e9.ko.compiled.js?20200328194329"></script>
-<script src="/common/js/plugins/ui/jquery-ui.min.js?20200328194239"></script>
-<script src="/common/js/plugins/ui/jquery.ui.datepicker-ko.js?20200328194239"></script>
-<script src="/modules/board/skins/sketchbook5/js/imagesloaded.pkgd.min.js?20200329181042"></script>
-<script src="/modules/board/skins/sketchbook5/js/jquery.cookie.js?20200329181042"></script>
-<script src="/modules/editor/skins/xpresseditor/js/xe_textarea.min.js?20200328194236"></script>
-<script src="/modules/board/skins/sketchbook5/js/jquery.autogrowtextarea.min.js?20200329181042"></script>
-<script src="/modules/board/skins/sketchbook5/js/board.js?20200329181042"></script>
-<script src="/modules/board/skins/sketchbook5/js/jquery.masonry.min.js?20200329181042"></script>
+
 </body>
 </html>
