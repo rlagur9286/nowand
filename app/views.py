@@ -30,5 +30,21 @@ def render_page(request, page_name):
             "files/thumbnails/275/360x300.crop.jpg",
         ]
         context["img_list"] = img_list
+    elif page_name == "yangju_photo":
+        img_list = [
+            "files/thumbnails/381/360x300.crop.jpg",
+            "files/thumbnails/379/360x300.crop.jpg",
+            "files/thumbnails/377/360x300.crop.jpg",
+            "files/thumbnails/371/360x300.crop.jpg",
+            "files/thumbnails/369/360x300.crop.jpg",
+            "files/thumbnails/367/360x300.crop.jpg",
+            "files/thumbnails/321/360x300.crop.jpg",
+            "files/thumbnails/318/360x300.crop.jpg",
+            "files/thumbnails/316/360x300.crop.jpg",
+            "files/thumbnails/314/360x300.crop.jpg",
+            "files/thumbnails/312/360x300.crop.jpg",
+            "files/thumbnails/310/360x300.crop.jpg",
+        ]
+        context["img_list"] = img_list
 
     return render(request, page_name + '.html', context)
